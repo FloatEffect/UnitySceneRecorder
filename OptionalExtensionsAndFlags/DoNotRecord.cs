@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnitySceneRecorder;
 
 // Attach this component to GameObjects if they should not appear in the recording.
 
@@ -16,4 +17,6 @@ using UnityEngine;
 // Otherwise the instantiated GameObject will not be recognized as new.
 // If the original GameObject should also be visible, Destroy it's ObjectObserver component immediately.
 
-public class DoNotRecord : MonoBehaviour { }
+namespace UnitySceneRecorder{
+	public class DoNotRecord : MonoBehaviour { }
+}
