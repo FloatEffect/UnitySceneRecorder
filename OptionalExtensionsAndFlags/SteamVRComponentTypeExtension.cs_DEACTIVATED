@@ -1,0 +1,32 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Valve.VR;
+using Valve.VR.InteractionSystem;
+
+// Attach this component to the GameObject holding SceneObserver if Valve.VR is used!
+// See IComponentTypeExtension.cs for detailed documentation
+
+public class SteamVRComponentTypeExtension : MonoBehaviour, IComponentTypeExtension
+{
+    // Disables all components of type Interactable in _gameObject and children
+    void IComponentTypeExtension.DisableComponentsInDuplicatedChildren(GameObject _gameObject)
+    {
+        
+        Interactable[] interactables = _gameObject.GetComponentsInChildren<Interactable>(true);
+        foreach (Interactable interactable in interactables)
+            interactable.enabled = false;
+        
+    }
+
+    // Returns true if component is Interactable
+    bool IComponentTypeExtension.DoNotDestroyComponentInDuplicatedChildren(Component component)
+    {
+        if (component is Interactable)
+            return true;
+
+        return false;
+    }
+}
+
+    
