@@ -64,12 +64,12 @@ Preview:
 
 If you modify the code, run the TestScene to ensure, nothing breaks. The tests result should look like this:
 
-![](https://raw.githubusercontent.com/FloatEffect/Utilities/main/VRWindowProject/Testscene_compressed.mp4)
-
+https://raw.githubusercontent.com/FloatEffect/Utilities/main/VRWindowProject/Testscene_compressed.mp4
 
 ## License
 
 This software is licensed under GPL (GNU General Public License)
+For specifics see [LICENSE](LICENSE)
 
 ## Autor
 
