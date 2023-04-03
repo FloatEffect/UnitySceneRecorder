@@ -45,7 +45,8 @@ For further project specific customization, extensions (Components which impleme
 
 Preview:
 
-![](images_for_readme/tutorial_cut_compressed.mp4)
+[![PreviewVRWindowTutorialVideo]({Materials/PreviewVRWindowTutorialVideo.png})]({https://raw.githubusercontent.com/FloatEffect/Utilities/main/VRWindowProject/tutorial_cut_compressed.mp4} "VRWindowTutorialVideo") [![PreviewVRWindowOfficeVideo]({Materials/PreviewVRWindowOfficeVideo.png})]({https://raw.githubusercontent.com/FloatEffect/Utilities/main/VRWindowProject/Office.mp4} "VRWindowOfficeVideo") [![PreviewVRWindowYogaVideo]({Materials/PreviewVRWindowYogaVideo.png})]({https://raw.githubusercontent.com/FloatEffect/Utilities/main/VRWindowProject/Yoga.mp4} "VRWindowYogaVideo")
+
 
 ## Special cases and restrictions
 
