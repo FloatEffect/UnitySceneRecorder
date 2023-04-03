@@ -42,7 +42,7 @@ For further project specific customization, extensions (Components which impleme
 
 - [CustomMaterialExtension](OptionalExtensionsAndFlags/CustomMaterialExtension.cs) allows you to change the Material of the replayed GameObject. 
 
-- [VrWindowExtension](OptionalExtensionsAndFlags/VrWindowExtension.cs) reports all Materials to an [IVrWindow](Code/IVrWindow.cs) object, which can replace Shaders and has controle over Shader parameter. This can be used to add a stencil test and to discard pixels outside a certain spatial region in order make the recording only visible when looking through a window. This scene recorder is actually part of a bigger project, implementing interactable windows for VR. As soon as the refactoring is done, I will publish it on my GitHub page. 
+- [VrWindowExtension](OptionalExtensionsAndFlags/VrWindowExtension.cs) reports all Materials to an [IVrWindow](Code/IVrWindow.cs) object, which can replace Shaders and has controle over Shader parameter. This can be used to add a stencil test and to discard pixels outside a certain spatial region in order make the recording only visible when looking through a window. This scene recorder is actually part of a bigger project, implementing interactable windows for VR. As soon as the refactoring is done, I will publish it on my [GitHub page](https://github.com/FloatEffect). 
 
 Preview: [VR-Window Tutorial Video](https://raw.githubusercontent.com/FloatEffect/Utilities/main/VRWindowProject/tutorial_cut_compressed.mp4) | [VR-Window Office Showcase Video](https://raw.githubusercontent.com/FloatEffect/Utilities/main/VRWindowProject/Office.mp4) | [VR-Window Yoga Showcase Video](https://raw.githubusercontent.com/FloatEffect/Utilities/main/VRWindowProject/Yoga.mp4)
 
