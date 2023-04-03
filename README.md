@@ -1,8 +1,8 @@
 # UnitySceneRecorder
-Drag&amp;Drop Unity-Asset to Record and Replay entire Scenes
+Drag&amp;Drop Unity-Asset to Record and Replay entire Scenes in the Unity Editor
 
-UnitySceneRecorder is a tool designed to record and replay entire scenes in Unity with a focus on simple integration and generalizability for maximum compatibility, while being fully customizable. Without installation simply drag and drop the [SceneRecorderMainConfig](SceneRecorderMainConfig.prefab) into your personal Unity project and for further customization, attach extensions to GameObjects for GameObject specific features. 
-As a special feature over Unity's integrated [GameObjectRecorder](https://docs.unity3d.com/2020.1/Documentation/ScriptReference/Animations.GameObjectRecorder.html) beside recording multiple GameObjects at once, UnitySceneRecorder can replay the recording as a separate model, while even displaying GameObjects which were created or destroyed during the recording.
+UnitySceneRecorder is a tool designed to record and replay entire scenes in the Unity Editor with a focus on simple integration and generalizability for maximum compatibility, while being fully customizable. Without installation simply drag and drop the [SceneRecorderMainConfig](SceneRecorderMainConfig.prefab) into your personal Unity project and for further customization, attach extensions to GameObjects for GameObject specific features. 
+As a special feature over Unity's integrated [GameObjectRecorder](https://docs.unity3d.com/2020.1/Documentation/ScriptReference/Animations.GameObjectRecorder.html) beside recording multiple GameObjects at once, UnitySceneRecorder can replay the recording as a separate model, while even displaying GameObjects which were created or destroyed during the recording. Please note that this tool relies on the UnityEditor.Animations namespace, which means it can only be used within the Unity Editor and may not support building stand-alone executables.
 
 ## How to use
 
@@ -42,7 +42,7 @@ For further project specific customization, extensions (Components which impleme
 
 - [CustomMaterialExtension](OptionalExtensionsAndFlags/CustomMaterialExtension.cs) allows you to change the Material of the replayed GameObject. 
 
-- [VrWindowExtension](OptionalExtensionsAndFlags/VrWindowExtension.cs) reports all Materials to an [IVrWindow](Code/IVrWindow.cs) object, which can replace Shaders and has controle over Shader parameter. This can be used to add a stencil test and to discard pixels outside a certain spatial region in order make the recording only visible when looking through a window. This scene recorder is actually part of a bigger project, implementing interactable windows for VR. As soon as the refactoring is done, I will publish it on my GitHub page. 
+- [VrWindowExtension](OptionalExtensionsAndFlags/VrWindowExtension.cs) reports all Materials to an [IVrWindow](Code/IVrWindow.cs) object, which can replace Shaders and has controle over Shader parameter. This can be used to add a stencil test and to discard pixels outside a certain spatial region in order make the recording only visible when looking through a window. This scene recorder is actually part of a bigger project, implementing interactable windows for VR. As soon as the refactoring is done, I will publish it on my [GitHub page](https://github.com/FloatEffect). 
 
 Preview: [VR-Window Tutorial Video](https://raw.githubusercontent.com/FloatEffect/Utilities/main/VRWindowProject/tutorial_cut_compressed.mp4) | [VR-Window Office Showcase Video](https://raw.githubusercontent.com/FloatEffect/Utilities/main/VRWindowProject/Office.mp4) | [VR-Window Yoga Showcase Video](https://raw.githubusercontent.com/FloatEffect/Utilities/main/VRWindowProject/Yoga.mp4)
 
