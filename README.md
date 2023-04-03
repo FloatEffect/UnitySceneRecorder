@@ -1,8 +1,8 @@
 # UnitySceneRecorder
-Drag&amp;Drop Unity-Asset to Record and Replay entire Scenes
+Drag&amp;Drop Unity-Asset to Record and Replay entire Scenes in the Unity Editor
 
-UnitySceneRecorder is a tool designed to record and replay entire scenes in Unity with a focus on simple integration and generalizability for maximum compatibility, while being fully customizable. Without installation simply drag and drop the [SceneRecorderMainConfig](SceneRecorderMainConfig.prefab) into your personal Unity project and for further customization, attach extensions to GameObjects for GameObject specific features. 
-As a special feature over Unity's integrated [GameObjectRecorder](https://docs.unity3d.com/2020.1/Documentation/ScriptReference/Animations.GameObjectRecorder.html) beside recording multiple GameObjects at once, UnitySceneRecorder can replay the recording as a separate model, while even displaying GameObjects which were created or destroyed during the recording.
+UnitySceneRecorder is a tool designed to record and replay entire scenes in the Unity Editor with a focus on simple integration and generalizability for maximum compatibility, while being fully customizable. Without installation simply drag and drop the [SceneRecorderMainConfig](SceneRecorderMainConfig.prefab) into your personal Unity project and for further customization, attach extensions to GameObjects for GameObject specific features. 
+As a special feature over Unity's integrated [GameObjectRecorder](https://docs.unity3d.com/2020.1/Documentation/ScriptReference/Animations.GameObjectRecorder.html) beside recording multiple GameObjects at once, UnitySceneRecorder can replay the recording as a separate model, while even displaying GameObjects which were created or destroyed during the recording. Please note that this tool relies on the UnityEditor.Animations namespace, which means it can only be used within the Unity Editor and may not support building stand-alone executables.
 
 ## How to use
 
