@@ -27,6 +27,7 @@ To replay the recording, all GameObjects must be duplicated. There are two ways 
 1. Duplication by Instantiation creates an identical copy of a GameObject including all Components. Unknown components can contain logic, which can mess with the scene when running twice, so they have to be destroyed. It can happen that components can not be destroyed without error. If components can be disabled instead, have a look at [IComponentTypeExtension](Code/IComponentTypeExtension.cs). If this is also not possible choose duplication by Recreation.
 2. Duplication by Recreation creates empty GameObjects for every original, attaches standard Renderer Components to it and copies Mesh and Materials over. If a GameObject has a non-standard Renderer, choose duplication by Instantiation.
 
+
 In the rare case where both methods fail, the GameObject won't be recorded. 
 Duplication by Recreation is the standard method. To switch the method for a GameObject, attach a [ForceDuplicationByInstantiation](OptionalExtensionsAndFlags/ForceDuplicationByInstantiation.cs) Component to the lowest GameObject in hierarchy (root GameObject). This will also affect all children in the graph (not only direct children) unless they have a [DoRecordIndividually](OptionalExtensionsAndFlags/DoRecordIndividually.cs) Component attached. Individually recorded GameObjects are treated as root GameObjects and can have their own [ForceDuplicationByInstantiation](OptionalExtensionsAndFlags/ForceDuplicationByInstantiation.cs) Component.
 
@@ -43,10 +44,7 @@ For further project specific customization, extensions (Components which impleme
 
 - [VrWindowExtension](OptionalExtensionsAndFlags/VrWindowExtension.cs) reports all Materials to an [IVrWindow](Code/IVrWindow.cs) object, which can replace Shaders and has controle over Shader parameter. This can be used to add a stencil test and to discard pixels outside a certain spatial region in order make the recording only visible when looking through a window. This scene recorder is actually part of a bigger project, implementing interactable windows for VR. As soon as the refactoring is done, I will publish it on my GitHub page. 
 
-Preview:
-
-[![PreviewVRWindowTutorialVideo]({Materials/PreviewVRWindowTutorialVideo.png})]({https://raw.githubusercontent.com/FloatEffect/Utilities/main/VRWindowProject/tutorial_cut_compressed.mp4} "VRWindowTutorialVideo") [![PreviewVRWindowOfficeVideo]({Materials/PreviewVRWindowOfficeVideo.png})]({https://raw.githubusercontent.com/FloatEffect/Utilities/main/VRWindowProject/Office.mp4} "VRWindowOfficeVideo") [![PreviewVRWindowYogaVideo]({Materials/PreviewVRWindowYogaVideo.png})]({https://raw.githubusercontent.com/FloatEffect/Utilities/main/VRWindowProject/Yoga.mp4} "VRWindowYogaVideo")
-
+Preview: [VR-Window Tutorial Video](https://raw.githubusercontent.com/FloatEffect/Utilities/main/VRWindowProject/tutorial_cut_compressed.mp4) | [VR-Window Office Showcase Video](https://raw.githubusercontent.com/FloatEffect/Utilities/main/VRWindowProject/Office.mp4) | [VR-Window Yoga Showcase Video](https://raw.githubusercontent.com/FloatEffect/Utilities/main/VRWindowProject/Yoga.mp4)
 
 ## Special cases and restrictions
 
@@ -75,7 +73,6 @@ For specifics see [LICENSE](LICENSE)
 ## Autor
 
 Daniel Gotzen (unityscenerecorder@notjustcode.de)
-
 
 
 
