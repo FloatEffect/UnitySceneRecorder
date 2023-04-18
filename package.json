@@ -1,0 +1,21 @@
+{
+  "name": "com.floateffect.unity.unityscenerecorder",
+  "version": "1.0.0",
+  "displayName": "UnitySceneRecorder",
+  "description": "Drag&Drop Unity-Asset to Record and Replay entire Scenes in the Unity Editor\n\nUnitySceneRecorder is a tool designed to record and replay entire scenes in the Unity Editor with a focus on simple integration and generalizability for maximum compatibility, while being fully customizable. Without installation simply drag and drop the SceneRecorderMainConfig into your personal Unity project and for further customization, attach extensions to GameObjects for GameObject specific features. As a special feature over Unity's integrated GameObjectRecorder beside recording multiple GameObjects at once, UnitySceneRecorder can replay the recording as a separate model, while even displaying GameObjects which were created or destroyed during the recording. Please note that this tool relies on the UnityEditor.Animations namespace, which means it can only be used within the Unity Editor and may not support building stand-alone executables.",
+  "unity": "2021.3",
+  "unityRelease": "15f1",
+  "documentationUrl": "https://gitlab.com/learntech-rwth/eduxr-framework/xapi-4-unity/-/wikis/",
+  "changelogUrl": "https://gitlab.com/learntech-rwth/eduxr-framework/xapi-4-unity/-/blob/main/CHANGELOG",
+  "licensesUrl": "https://github.com/FloatEffect/UnitySceneRecorder/blob/main/LICENSE",
+  "dependencies": {},
+  "keywords": [
+    "Scene Recording",
+    "Virtual Reality"
+  ],
+  "author": {
+    "name": "Daniel Gotzen",
+    "email": "daniel.gotzen@rwth-aachen.de",
+    "url": "https://github.com/FloatEffect"
+  }
+}
